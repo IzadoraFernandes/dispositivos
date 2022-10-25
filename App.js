@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Meucomponente from './Meucomponente';
+import Meuidade from './Meuidade';
+import Meumatricula from './Meumatricula';
+import Crusodeads from './Crusodeads';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>:) :( :l </Text>
-      <StatusBar style="auto" />
+      <Crusodeads/>
+      <Meuidade/>
+      <Meumatricula/>
+      
     </View>
   );
 }
@@ -14,8 +21,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#69747c',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
 });
